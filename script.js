@@ -5,7 +5,7 @@ $(".saveBtn").on("click", function(){
     console.log(hourblock, plan)
     localStorage.setItem(button,plan);
 });
-let currentdate = moment().format();
+let currentdate =moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 console.log(currentdate)
 $("#currentDay").text(currentdate);
 let currentHour= moment().hours();
